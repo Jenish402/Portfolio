@@ -1,0 +1,403 @@
+@font-face{
+    font-family: logoFont;
+    src: url(BlackOpsOne-Regular.ttf);
+}
+@font-face{
+    font-family: Font;
+    src: url(PressStart2P-Regular.ttf);
+}
+@font-face{
+    font-family: textFont;
+    src: url(OverpassMono-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: var(--textColor);
+    background-color: black;
+}
+
+:root{
+    --textColor : #A1FBDB;
+    --linkColor : white;
+}
+
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+img{
+    display: inline-block;
+    /* width: 100%; */
+}
+
+li{
+    list-style: none;
+}
+
+/* ========================== header and navbar css ============================= */
+
+.left-corner1{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 1.5rem;
+    left: 0.62rem;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 10;
+}
+
+.left-corner2{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 2.5rem;
+    left: -0.2rem;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
+    z-index: 10;
+}
+.left-corner3{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 8rem;
+    left: 0.62rem;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 10;
+}
+
+.left-corner4{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 7rem;
+    left: -0.2rem;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
+    z-index: 10;
+}
+
+/* ================================== right corner ========================= */
+
+.right-corner1{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 1.5rem;
+    left: 21rem;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 10;
+}
+
+.right-corner2{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 2.5rem;
+    left: 21.8rem;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
+    z-index: 10;
+}
+
+.right-corner3{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 8rem;
+    left: 21rem;
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    z-index: 10;
+}
+
+.right-corner4{
+    display: inline-block;
+    background-color: aliceblue;
+    top: 7rem;
+    left: 21.8rem;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    transform: rotate(90deg);
+    /* transform: rotate(90deg); */
+    z-index: 10;
+}
+
+
+.scannerEffect{
+    display: inline-block;
+    background-color: aliceblue;
+    box-shadow: 1px 1px 10px 1px white;
+    opacity: 0.5;
+    /* top: 3rem; */
+    left: 15px;
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    align-items: center;
+    animation: leftToright 3s linear infinite;
+}
+
+@keyframes leftToright{
+    0%, 100%{
+        left: 25px;
+    }
+    50%{
+        left: 20%;
+        /* background-color: black; */
+    }
+}
+
+header{
+    height: 9.6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    /* position: fixed; */
+}
+
+.logo{
+    font-size: 3rem;
+    font-family: logoFont;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.2rem;
+    font-family: Font;
+}
+
+.navbar-links{
+    color: white;
+    transition: all 1s linear ;
+}
+
+.navbar-list .navbar-links:hover{
+    color: var(--textColor);
+}
+
+.mobile-menu{
+    font-size: 2.5rem;
+    color: black;
+}
+
+.mobile-view-btn{
+    display: none;
+}
+
+.mobile-menu[nmae="close"]{
+    display: none;
+}
+
+/* ============================ home page css ============================== */
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+/* ======================== main page container ============================= */
+
+.container{
+    max-width: 100rem;
+    margin: 0 auto;
+}
+
+/* ======================== left content css ============================= */
+
+.left-contect h1{
+    font-size: 3rem;
+    font-family: Font;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.left-contect p{
+    font-size: 1.5rem;
+    font-family: Font;
+    margin-bottom: 15rem;
+}
+
+.social-media-icon{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 2rem;
+    /* position: relative; */
+}
+.linkedin-logo{
+    position: relative;
+}
+
+.download-cv-btn a{
+    /* color: white; */
+    transition: 1s;
+    padding: 10px 15px 10px 15px;
+    color: white;
+}
+
+.download-cv-btn a:hover{
+    border: 1px solid var(--textColor);
+    box-shadow: 1px 1px 5px white;
+    color: black;
+    background-color: #A1FBDB;
+}
+
+.download-cv-btn{
+    font-size: 0.9rem;
+    padding: 1rem 2rem 1rem 1.5rem;
+    background-color: transparent;
+    transition: all 1s linear;
+    font-family: textFont;
+    border: none;
+    border: 1px solid white;
+}
+
+.download-cv-btn:hover{
+    border-color: #A1FBDB;
+
+}
+
+
+
+
+
+/* ============================== Right container ========================== */
+
+.image-effect-shap1::after{
+    content: "";
+    position: absolute;
+    top: 8rem;
+    left: 68%;
+    height: 44rem;
+    width: 1rem;
+    background-color: #A1FBDB;
+    opacity: 0.3;
+
+}
+.image-effect-shap2::after{
+    content: "";
+    position: absolute;
+    top: 8rem;
+    left: 68%;
+    height: 44rem;
+    width: 30rem;
+    background-color: #A1FBDB;
+    opacity: 0.2;
+    box-shadow: 1px 1px 3px white;
+
+}
+
+.myPhoto{
+    height: auto;
+    width: 74.5%;
+}
+
+
+
+/* ===================================================About page css ======================================================== */
+
+.grid1{
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.about-right-container h1{
+    margin-top: 10rem;
+    margin-left: 23rem;
+    /* margin-bottom: 0rem; */
+    font-size: 2rem;
+    font-family: Font;
+}
+
+.about-right-container p{
+    /* margin-bottom: 10rem; */
+    font-family: textFont;
+    font-size: 1.2rem;
+    padding: 3rem;
+    line-height: 2rem;
+    /* height: 400px; */
+    overflow: auto;
+    position: relative;
+    
+    
+}
+
+
+
+.text-border1{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 61rem;
+    height: 45rem;
+    border: 1px solid white;
+    top: 58rem;
+    left: 41rem;
+    /* border-radius: 10px; */
+}
+.text-border2{
+    content: "";
+    position: absolute;
+    background-color: transparent;
+    width: 61rem;
+    height: 45rem;
+    border: 1px solid white;
+    top: 59rem;
+    left: 42rem;
+    /* border-radius: 10px; */
+}
+
+.about-left-container img{
+    height: auto;
+    width: 35rem;
+    
+    margin-top: 10rem;
+}
+
+.img2-scanner-effect1::after{
+    content: "";
+    position: absolute;
+    top: 60rem;
+    left: 16rem;
+    height: 46rem;
+    width: 0.5rem;
+    background-color: #A1FBDB;
+    opacity: 0.3;
+
+}
+.img2-scanner-effect2::after{
+    content: "";
+    position: absolute;
+    top: 60rem;
+    left: 1rem;
+    height: 46rem;
+    width: 15rem;
+    background-color: #A1FBDB;
+    opacity: 0.2;
+    box-shadow: 1px 1px 3px white;
+
+}
